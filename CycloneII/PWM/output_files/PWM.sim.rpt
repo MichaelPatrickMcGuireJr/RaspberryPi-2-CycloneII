@@ -1,0 +1,577 @@
+Simulator report for PWM
+Wed Jan 27 17:32:07 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 100.0 us     ;
+; Simulation Netlist Size     ; 207 nodes    ;
+; Simulation Coverage         ;      27.05 % ;
+; Total Number of Transitions ; 9145         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                        ;
++--------------------------------------------------------------------------------------------+----------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                      ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                   ; Timing        ;
+; Start time                                                                                 ; 0 ns                                         ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                          ;               ;
+; Vector input source                                                                        ; /home/mike/practice_quartus/PWM/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                           ; On            ;
+; Check outputs                                                                              ; Off                                          ; Off           ;
+; Report simulation coverage                                                                 ; On                                           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                           ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                           ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                           ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                          ; Off           ;
+; Detect glitches                                                                            ; Off                                          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                          ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                          ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                          ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                         ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      27.05 % ;
+; Total nodes checked                                 ; 207          ;
+; Total output ports checked                          ; 207          ;
+; Total output ports with complete 1/0-value coverage ; 56           ;
+; Total output ports with no 1/0-value coverage       ; 116          ;
+; Total output ports with no 1-value coverage         ; 129          ;
+; Total output ports with no 0-value coverage         ; 138          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------+
+; Complete 1/0-Value Coverage                            ;
++------------------+------------------+------------------+
+; Node Name        ; Output Port Name ; Output Port Type ;
++------------------+------------------+------------------+
+; |pwm|count~0     ; |pwm|count~0     ; out              ;
+; |pwm|count~1     ; |pwm|count~1     ; out              ;
+; |pwm|count~2     ; |pwm|count~2     ; out              ;
+; |pwm|count~3     ; |pwm|count~3     ; out              ;
+; |pwm|count~4     ; |pwm|count~4     ; out              ;
+; |pwm|count~5     ; |pwm|count~5     ; out              ;
+; |pwm|count~6     ; |pwm|count~6     ; out              ;
+; |pwm|count~7     ; |pwm|count~7     ; out              ;
+; |pwm|count~8     ; |pwm|count~8     ; out              ;
+; |pwm|count[0][8] ; |pwm|count[0][8] ; regout           ;
+; |pwm|count[0][7] ; |pwm|count[0][7] ; regout           ;
+; |pwm|count[0][6] ; |pwm|count[0][6] ; regout           ;
+; |pwm|count[0][5] ; |pwm|count[0][5] ; regout           ;
+; |pwm|count[0][4] ; |pwm|count[0][4] ; regout           ;
+; |pwm|count[0][3] ; |pwm|count[0][3] ; regout           ;
+; |pwm|count[0][2] ; |pwm|count[0][2] ; regout           ;
+; |pwm|count[0][1] ; |pwm|count[0][1] ; regout           ;
+; |pwm|count[0][0] ; |pwm|count[0][0] ; regout           ;
+; |pwm|clk         ; |pwm|clk         ; out              ;
+; |pwm|Add0~0      ; |pwm|Add0~0      ; out0             ;
+; |pwm|Add0~1      ; |pwm|Add0~1      ; out0             ;
+; |pwm|Add0~2      ; |pwm|Add0~2      ; out0             ;
+; |pwm|Add0~3      ; |pwm|Add0~3      ; out0             ;
+; |pwm|Add0~4      ; |pwm|Add0~4      ; out0             ;
+; |pwm|Add0~5      ; |pwm|Add0~5      ; out0             ;
+; |pwm|Add0~6      ; |pwm|Add0~6      ; out0             ;
+; |pwm|Add0~7      ; |pwm|Add0~7      ; out0             ;
+; |pwm|Add0~8      ; |pwm|Add0~8      ; out0             ;
+; |pwm|Add0~9      ; |pwm|Add0~9      ; out0             ;
+; |pwm|Add0~10     ; |pwm|Add0~10     ; out0             ;
+; |pwm|Add0~11     ; |pwm|Add0~11     ; out0             ;
+; |pwm|Add0~12     ; |pwm|Add0~12     ; out0             ;
+; |pwm|Add0~13     ; |pwm|Add0~13     ; out0             ;
+; |pwm|Add0~14     ; |pwm|Add0~14     ; out0             ;
+; |pwm|Add1~5      ; |pwm|Add1~5      ; out0             ;
+; |pwm|Add1~7      ; |pwm|Add1~7      ; out0             ;
+; |pwm|Add1~10     ; |pwm|Add1~10     ; out0             ;
+; |pwm|Add1~13     ; |pwm|Add1~13     ; out0             ;
+; |pwm|Equal0~0    ; |pwm|Equal0~0    ; out0             ;
+; |pwm|Equal1~0    ; |pwm|Equal1~0    ; out0             ;
+; |pwm|Equal1~1    ; |pwm|Equal1~1    ; out0             ;
+; |pwm|Equal1~2    ; |pwm|Equal1~2    ; out0             ;
+; |pwm|Equal1~3    ; |pwm|Equal1~3    ; out0             ;
+; |pwm|Equal1~4    ; |pwm|Equal1~4    ; out0             ;
+; |pwm|Equal1~5    ; |pwm|Equal1~5    ; out0             ;
+; |pwm|Equal1~6    ; |pwm|Equal1~6    ; out0             ;
+; |pwm|Equal1~7    ; |pwm|Equal1~7    ; out0             ;
+; |pwm|Equal2~0    ; |pwm|Equal2~0    ; out0             ;
+; |pwm|Equal2~1    ; |pwm|Equal2~1    ; out0             ;
+; |pwm|Equal2~2    ; |pwm|Equal2~2    ; out0             ;
+; |pwm|Equal2~3    ; |pwm|Equal2~3    ; out0             ;
+; |pwm|Equal2~4    ; |pwm|Equal2~4    ; out0             ;
+; |pwm|Equal2~5    ; |pwm|Equal2~5    ; out0             ;
+; |pwm|Equal2~6    ; |pwm|Equal2~6    ; out0             ;
+; |pwm|Equal2~7    ; |pwm|Equal2~7    ; out0             ;
+; |pwm|Equal2~8    ; |pwm|Equal2~8    ; out0             ;
++------------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                                           ;
++----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                      ; Output Port Name                                                                                               ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+; |pwm|half_duty_new~0                                                                                           ; |pwm|half_duty_new~0                                                                                           ; out              ;
+; |pwm|half_duty_new~1                                                                                           ; |pwm|half_duty_new~1                                                                                           ; out              ;
+; |pwm|half_duty_new~2                                                                                           ; |pwm|half_duty_new~2                                                                                           ; out              ;
+; |pwm|half_duty_new~3                                                                                           ; |pwm|half_duty_new~3                                                                                           ; out              ;
+; |pwm|half_duty_new~4                                                                                           ; |pwm|half_duty_new~4                                                                                           ; out              ;
+; |pwm|half_duty_new~5                                                                                           ; |pwm|half_duty_new~5                                                                                           ; out              ;
+; |pwm|half_duty_new~6                                                                                           ; |pwm|half_duty_new~6                                                                                           ; out              ;
+; |pwm|half_duty_new~7                                                                                           ; |pwm|half_duty_new~7                                                                                           ; out              ;
+; |pwm|half_duty~0                                                                                               ; |pwm|half_duty~0                                                                                               ; out              ;
+; |pwm|half_duty~6                                                                                               ; |pwm|half_duty~6                                                                                               ; out              ;
+; |pwm|pwm_out~0                                                                                                 ; |pwm|pwm_out~0                                                                                                 ; out              ;
+; |pwm|pwm_out~1                                                                                                 ; |pwm|pwm_out~1                                                                                                 ; out              ;
+; |pwm|pwm_n_out~1                                                                                               ; |pwm|pwm_n_out~1                                                                                               ; out              ;
+; |pwm|pwm_out[0]~reg0                                                                                           ; |pwm|pwm_out[0]~reg0                                                                                           ; regout           ;
+; |pwm|half_duty_new[7]                                                                                          ; |pwm|half_duty_new[7]                                                                                          ; regout           ;
+; |pwm|half_duty_new[1]                                                                                          ; |pwm|half_duty_new[1]                                                                                          ; regout           ;
+; |pwm|half_duty[0][7]                                                                                           ; |pwm|half_duty[0][7]                                                                                           ; regout           ;
+; |pwm|half_duty[0][1]                                                                                           ; |pwm|half_duty[0][1]                                                                                           ; regout           ;
+; |pwm|reset_n                                                                                                   ; |pwm|reset_n                                                                                                   ; out              ;
+; |pwm|ena                                                                                                       ; |pwm|ena                                                                                                       ; out              ;
+; |pwm|duty[0]                                                                                                   ; |pwm|duty[0]                                                                                                   ; out              ;
+; |pwm|duty[1]                                                                                                   ; |pwm|duty[1]                                                                                                   ; out              ;
+; |pwm|duty[2]                                                                                                   ; |pwm|duty[2]                                                                                                   ; out              ;
+; |pwm|duty[3]                                                                                                   ; |pwm|duty[3]                                                                                                   ; out              ;
+; |pwm|duty[4]                                                                                                   ; |pwm|duty[4]                                                                                                   ; out              ;
+; |pwm|duty[5]                                                                                                   ; |pwm|duty[5]                                                                                                   ; out              ;
+; |pwm|duty[6]                                                                                                   ; |pwm|duty[6]                                                                                                   ; out              ;
+; |pwm|duty[7]                                                                                                   ; |pwm|duty[7]                                                                                                   ; out              ;
+; |pwm|pwm_out[0]                                                                                                ; |pwm|pwm_out[0]                                                                                                ; pin_out          ;
+; |pwm|Add1~1                                                                                                    ; |pwm|Add1~1                                                                                                    ; out0             ;
+; |pwm|Add1~2                                                                                                    ; |pwm|Add1~2                                                                                                    ; out0             ;
+; |pwm|Add1~3                                                                                                    ; |pwm|Add1~3                                                                                                    ; out0             ;
+; |pwm|Add1~4                                                                                                    ; |pwm|Add1~4                                                                                                    ; out0             ;
+; |pwm|Add1~6                                                                                                    ; |pwm|Add1~6                                                                                                    ; out0             ;
+; |pwm|Add1~8                                                                                                    ; |pwm|Add1~8                                                                                                    ; out0             ;
+; |pwm|Add1~9                                                                                                    ; |pwm|Add1~9                                                                                                    ; out0             ;
+; |pwm|Add1~11                                                                                                   ; |pwm|Add1~11                                                                                                   ; out0             ;
+; |pwm|Add1~12                                                                                                   ; |pwm|Add1~12                                                                                                   ; out0             ;
+; |pwm|Add1~14                                                                                                   ; |pwm|Add1~14                                                                                                   ; out0             ;
+; |pwm|Add1~15                                                                                                   ; |pwm|Add1~15                                                                                                   ; out0             ;
+; |pwm|Add1~16                                                                                                   ; |pwm|Add1~16                                                                                                   ; out0             ;
+; |pwm|Add1~17                                                                                                   ; |pwm|Add1~17                                                                                                   ; out0             ;
+; |pwm|Add1~18                                                                                                   ; |pwm|Add1~18                                                                                                   ; out0             ;
+; |pwm|Equal1~8                                                                                                  ; |pwm|Equal1~8                                                                                                  ; out0             ;
+; |pwm|Equal2~9                                                                                                  ; |pwm|Equal2~9                                                                                                  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~6                                                                     ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~6                                                                     ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][12]                                                           ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][12]                                                           ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][11]                                                           ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][11]                                                           ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][10]                                                           ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][10]                                                           ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][9]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][9]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][8]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][8]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][7]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][7]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][6]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][6]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~10                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~10                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~14                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~14                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~17                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~17                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~21                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~21                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~24                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~24                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~27                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~27                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~29                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~29                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~33                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~33                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~36                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~36                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~39                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~39                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~41                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~41                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~44                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~44                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~46                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~46                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~48                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~48                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~54                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~54                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][12]                                                           ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][12]                                                           ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][11]                                                           ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][11]                                                           ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][10]                                                           ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][10]                                                           ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][9]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][9]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][8]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][8]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][7]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][7]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][6]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][6]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][5]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][5]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][4]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][4]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][3]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][3]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][2]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][2]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~58                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~58                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~62                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~62                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~65                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~65                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~69                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~69                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~72                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~72                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~75                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~75                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~77                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~77                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~81                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~81                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~84                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~84                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~87                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~87                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~89                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~89                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~92                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~92                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~94                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~94                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~96                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~96                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~0  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~0  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~1  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~1  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~2  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~2  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~3  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~3  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~4  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~4  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~5  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~5  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~6  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~6  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~7  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~7  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~8  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~8  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~9  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~9  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~10 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~10 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~11 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~11 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~12 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~12 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~13 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~13 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~14 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~14 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~15 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~15 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~16 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~16 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~17 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~17 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~18 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~18 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~19 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~19 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~20 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~20 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~21 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~21 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~22 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~22 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~23 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~23 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~24 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~24 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~25 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~25 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~26 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~26 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~27 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~27 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~28 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~28 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~29 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~29 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~30 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~30 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~31 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~31 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~32 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~32 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~33 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~33 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~34 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~34 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~35 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~35 ; out0             ;
++----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                           ;
++----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                      ; Output Port Name                                                                                               ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+; |pwm|half_duty_new~0                                                                                           ; |pwm|half_duty_new~0                                                                                           ; out              ;
+; |pwm|half_duty_new~1                                                                                           ; |pwm|half_duty_new~1                                                                                           ; out              ;
+; |pwm|half_duty_new~2                                                                                           ; |pwm|half_duty_new~2                                                                                           ; out              ;
+; |pwm|half_duty_new~3                                                                                           ; |pwm|half_duty_new~3                                                                                           ; out              ;
+; |pwm|half_duty_new~4                                                                                           ; |pwm|half_duty_new~4                                                                                           ; out              ;
+; |pwm|half_duty_new~5                                                                                           ; |pwm|half_duty_new~5                                                                                           ; out              ;
+; |pwm|half_duty_new~6                                                                                           ; |pwm|half_duty_new~6                                                                                           ; out              ;
+; |pwm|half_duty_new~7                                                                                           ; |pwm|half_duty_new~7                                                                                           ; out              ;
+; |pwm|half_duty~0                                                                                               ; |pwm|half_duty~0                                                                                               ; out              ;
+; |pwm|half_duty~1                                                                                               ; |pwm|half_duty~1                                                                                               ; out              ;
+; |pwm|half_duty~2                                                                                               ; |pwm|half_duty~2                                                                                               ; out              ;
+; |pwm|half_duty~3                                                                                               ; |pwm|half_duty~3                                                                                               ; out              ;
+; |pwm|half_duty~4                                                                                               ; |pwm|half_duty~4                                                                                               ; out              ;
+; |pwm|half_duty~5                                                                                               ; |pwm|half_duty~5                                                                                               ; out              ;
+; |pwm|half_duty~6                                                                                               ; |pwm|half_duty~6                                                                                               ; out              ;
+; |pwm|half_duty~7                                                                                               ; |pwm|half_duty~7                                                                                               ; out              ;
+; |pwm|half_duty[0][0]                                                                                           ; |pwm|half_duty[0][0]                                                                                           ; regout           ;
+; |pwm|pwm_out~0                                                                                                 ; |pwm|pwm_out~0                                                                                                 ; out              ;
+; |pwm|pwm_out~1                                                                                                 ; |pwm|pwm_out~1                                                                                                 ; out              ;
+; |pwm|pwm_n_out~0                                                                                               ; |pwm|pwm_n_out~0                                                                                               ; out              ;
+; |pwm|pwm_n_out~1                                                                                               ; |pwm|pwm_n_out~1                                                                                               ; out              ;
+; |pwm|pwm_out[0]~reg0                                                                                           ; |pwm|pwm_out[0]~reg0                                                                                           ; regout           ;
+; |pwm|pwm_n_out[0]~reg0                                                                                         ; |pwm|pwm_n_out[0]~reg0                                                                                         ; regout           ;
+; |pwm|half_duty_new[7]                                                                                          ; |pwm|half_duty_new[7]                                                                                          ; regout           ;
+; |pwm|half_duty_new[6]                                                                                          ; |pwm|half_duty_new[6]                                                                                          ; regout           ;
+; |pwm|half_duty_new[5]                                                                                          ; |pwm|half_duty_new[5]                                                                                          ; regout           ;
+; |pwm|half_duty_new[4]                                                                                          ; |pwm|half_duty_new[4]                                                                                          ; regout           ;
+; |pwm|half_duty_new[3]                                                                                          ; |pwm|half_duty_new[3]                                                                                          ; regout           ;
+; |pwm|half_duty_new[2]                                                                                          ; |pwm|half_duty_new[2]                                                                                          ; regout           ;
+; |pwm|half_duty_new[1]                                                                                          ; |pwm|half_duty_new[1]                                                                                          ; regout           ;
+; |pwm|half_duty_new[0]                                                                                          ; |pwm|half_duty_new[0]                                                                                          ; regout           ;
+; |pwm|half_duty[0][7]                                                                                           ; |pwm|half_duty[0][7]                                                                                           ; regout           ;
+; |pwm|half_duty[0][6]                                                                                           ; |pwm|half_duty[0][6]                                                                                           ; regout           ;
+; |pwm|half_duty[0][5]                                                                                           ; |pwm|half_duty[0][5]                                                                                           ; regout           ;
+; |pwm|half_duty[0][4]                                                                                           ; |pwm|half_duty[0][4]                                                                                           ; regout           ;
+; |pwm|half_duty[0][3]                                                                                           ; |pwm|half_duty[0][3]                                                                                           ; regout           ;
+; |pwm|half_duty[0][2]                                                                                           ; |pwm|half_duty[0][2]                                                                                           ; regout           ;
+; |pwm|half_duty[0][1]                                                                                           ; |pwm|half_duty[0][1]                                                                                           ; regout           ;
+; |pwm|reset_n                                                                                                   ; |pwm|reset_n                                                                                                   ; out              ;
+; |pwm|ena                                                                                                       ; |pwm|ena                                                                                                       ; out              ;
+; |pwm|duty[0]                                                                                                   ; |pwm|duty[0]                                                                                                   ; out              ;
+; |pwm|duty[1]                                                                                                   ; |pwm|duty[1]                                                                                                   ; out              ;
+; |pwm|duty[2]                                                                                                   ; |pwm|duty[2]                                                                                                   ; out              ;
+; |pwm|duty[3]                                                                                                   ; |pwm|duty[3]                                                                                                   ; out              ;
+; |pwm|duty[4]                                                                                                   ; |pwm|duty[4]                                                                                                   ; out              ;
+; |pwm|duty[5]                                                                                                   ; |pwm|duty[5]                                                                                                   ; out              ;
+; |pwm|duty[6]                                                                                                   ; |pwm|duty[6]                                                                                                   ; out              ;
+; |pwm|duty[7]                                                                                                   ; |pwm|duty[7]                                                                                                   ; out              ;
+; |pwm|pwm_out[0]                                                                                                ; |pwm|pwm_out[0]                                                                                                ; pin_out          ;
+; |pwm|pwm_n_out[0]                                                                                              ; |pwm|pwm_n_out[0]                                                                                              ; pin_out          ;
+; |pwm|Add1~0                                                                                                    ; |pwm|Add1~0                                                                                                    ; out0             ;
+; |pwm|Add1~2                                                                                                    ; |pwm|Add1~2                                                                                                    ; out0             ;
+; |pwm|Add1~17                                                                                                   ; |pwm|Add1~17                                                                                                   ; out0             ;
+; |pwm|Equal2~9                                                                                                  ; |pwm|Equal2~9                                                                                                  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~6                                                                     ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~6                                                                     ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][12]                                                           ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][12]                                                           ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][11]                                                           ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][11]                                                           ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][10]                                                           ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][10]                                                           ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][9]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][9]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][8]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][8]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][7]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][7]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][6]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[0][6]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~10                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~10                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~14                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~14                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~17                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~17                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~21                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~21                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~24                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~24                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~27                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~27                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~29                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~29                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~33                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~33                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~36                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~36                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~39                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~39                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~41                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~41                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~44                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~44                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~46                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~46                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~48                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~48                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~54                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~54                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][12]                                                           ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][12]                                                           ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][11]                                                           ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][11]                                                           ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][10]                                                           ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][10]                                                           ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][9]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][9]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][8]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][8]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][7]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][7]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][6]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][6]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][5]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][5]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][4]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][4]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][3]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][3]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][2]                                                            ; |pwm|lpm_mult:Mult0|multcore:mult_core|romout[1][2]                                                            ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~58                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~58                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~62                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~62                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~65                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~65                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~69                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~69                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~72                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~72                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~75                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~75                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~77                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~77                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~81                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~81                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~84                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~84                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~87                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~87                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~89                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~89                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~92                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~92                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~94                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~94                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|_~96                                                                    ; |pwm|lpm_mult:Mult0|multcore:mult_core|_~96                                                                    ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~0  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~0  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~1  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~1  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~2  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~2  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~3  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~3  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~4  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~4  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~5  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~5  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~6  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~6  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~7  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~7  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~8  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~8  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~9  ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~9  ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~10 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~10 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~11 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~11 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~12 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~12 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~13 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~13 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~14 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~14 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~15 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~15 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~16 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~16 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~17 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~17 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~18 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~18 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~19 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~19 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~20 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~20 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~21 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~21 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~22 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~22 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~23 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~23 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~24 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~24 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~25 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~25 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~26 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~26 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~27 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~27 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~28 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~28 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~29 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~29 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~30 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~30 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~31 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~31 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~32 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~32 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~33 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~33 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~34 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~34 ; out0             ;
+; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~35 ; |pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_4ch:auto_generated|op_1~35 ; out0             ;
++----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Jan 27 17:32:06 2021
+Info: Command: quartus_sim --simulation_results_format=VWF PWM -c PWM
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Info (324025): Using vector source file "/home/mike/practice_quartus/PWM/Waveform.vwf"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      27.05 %
+Info (328052): Number of transitions in simulation is 9145
+Info (324045): Vector file PWM.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 92 warnings
+    Info: Peak virtual memory: 633 megabytes
+    Info: Processing ended: Wed Jan 27 17:32:07 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

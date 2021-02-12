@@ -1,0 +1,75 @@
+# do PWM_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying /home/mike/altera/13.0sp1/modelsim_ase/linux/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /home/mike/altera/13.0sp1/modelsim_ase/linux/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {/home/mike/practice_quartus/PWM/PWM.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity pwm
+# -- Compiling architecture logic of pwm
+# 
+vsim rtl_work.pwm
+# vsim rtl_work.pwm 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading rtl_work.pwm(logic)
+force -freeze sim:/pwm/ena 1 0
+force -freeze sim:/pwm/reset_n 1 0
+force -freeze sim:/pwm/clk 1 0, 0 {50 ps} -r 100
+run
+add wave -position insertpoint  \
+sim:/pwm/pwm_out(0)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/pwm/clk
+run
+restart
+run
+run
+restart
+force -freeze sim:/pwm/ena 1 0
+force -freeze sim:/pwm/reset_n 1 0
+force -freeze sim:/pwm/clk 1 0, 0 {50 ps} -r 100
+run
+run
+run
+run
+force -freeze sim:/pwm/duty 150 0
+run

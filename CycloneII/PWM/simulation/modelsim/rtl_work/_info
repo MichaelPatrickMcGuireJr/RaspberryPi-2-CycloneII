@@ -1,0 +1,44 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/mike/practice_quartus/PWM/simulation/modelsim
+Epwm
+Z1 w1612145000
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 d/home/mike/practice_quartus/PWM/simulation/modelsim
+Z7 8/home/mike/practice_quartus/PWM/PWM.vhd
+Z8 F/home/mike/practice_quartus/PWM/PWM.vhd
+l0
+L30
+V=<kAH?kbofB7]CXD0<SGN2
+!s100 4IFdUM`_S[F]ie4LUPo0Y1
+Z9 OV;C;10.1d;51
+31
+!i10b 1
+Z10 !s108 1612145130.888563
+Z11 !s90 -reportprogress|300|-93|-work|work|/home/mike/practice_quartus/PWM/PWM.vhd|
+Z12 !s107 /home/mike/practice_quartus/PWM/PWM.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+Alogic
+R2
+R3
+R4
+R5
+DEx4 work 3 pwm 0 22 =<kAH?kbofB7]CXD0<SGN2
+l55
+L45
+VaMUb`EGIBGUQY3eGnK<?l3
+!s100 a4?LidKMKK7R4LQSRAdoX3
+R9
+31
+!i10b 1
+R10
+R11
+R12
+R13
+R14

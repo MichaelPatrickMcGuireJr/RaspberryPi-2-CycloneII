@@ -1,0 +1,109 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'sclk'
+Slack : -3.386
+TNS   : -66.998
+
+Type  : Slow Model Setup 'rx_req'
+Slack : 0.673
+TNS   : 0.000
+
+Type  : Slow Model Hold 'rx_req'
+Slack : -1.378
+TNS   : -10.410
+
+Type  : Slow Model Hold 'sclk'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'sclk'
+Slack : -0.977
+TNS   : -22.761
+
+Type  : Slow Model Recovery 'rx_req'
+Slack : 0.247
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'reset_n'
+Slack : 0.585
+TNS   : 0.000
+
+Type  : Slow Model Removal 'rx_req'
+Slack : -1.452
+TNS   : -11.323
+
+Type  : Slow Model Removal 'reset_n'
+Slack : -1.428
+TNS   : -11.110
+
+Type  : Slow Model Removal 'sclk'
+Slack : 0.558
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'sclk'
+Slack : -1.777
+TNS   : -59.653
+
+Type  : Slow Model Minimum Pulse Width 'reset_n'
+Slack : -1.777
+TNS   : -1.777
+
+Type  : Slow Model Minimum Pulse Width 'rx_req'
+Slack : -1.777
+TNS   : -1.777
+
+Type  : Fast Model Setup 'sclk'
+Slack : -0.646
+TNS   : -8.166
+
+Type  : Fast Model Setup 'rx_req'
+Slack : 0.705
+TNS   : 0.000
+
+Type  : Fast Model Hold 'rx_req'
+Slack : -0.206
+TNS   : -1.382
+
+Type  : Fast Model Hold 'sclk'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'sclk'
+Slack : 0.057
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'rx_req'
+Slack : 0.737
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'reset_n'
+Slack : 0.839
+TNS   : 0.000
+
+Type  : Fast Model Removal 'reset_n'
+Slack : -0.744
+TNS   : -5.826
+
+Type  : Fast Model Removal 'rx_req'
+Slack : -0.738
+TNS   : -5.775
+
+Type  : Fast Model Removal 'sclk'
+Slack : 0.157
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'sclk'
+Slack : -1.222
+TNS   : -40.222
+
+Type  : Fast Model Minimum Pulse Width 'reset_n'
+Slack : -1.222
+TNS   : -1.222
+
+Type  : Fast Model Minimum Pulse Width 'rx_req'
+Slack : -1.222
+TNS   : -1.222
+
+------------------------------------------------------------

@@ -1,0 +1,120 @@
+# do hello_world_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying /home/mike/altera/13.0sp1/modelsim_ase/linux/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /home/mike/altera/13.0sp1/modelsim_ase/linux/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {/home/mike/practice_quartus/hello_world/hello_world.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity hello_world
+# -- Compiling architecture Behavioral of hello_world
+# 
+vcom -reportprogress 300 -work work /home/mike/practice_quartus/hello_world/audio_pll.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity audio_pll
+# -- Compiling architecture SYN of audio_pll
+vcom -reportprogress 300 -work work /home/mike/practice_quartus/hello_world/audio_pll.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity audio_pll
+# -- Compiling architecture SYN of audio_pll
+vcom -reportprogress 300 -work work /home/mike/practice_quartus/hello_world/audio_pll.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity audio_pll
+# -- Compiling architecture SYN of audio_pll
+vsim -do hello_world_run_msim_rtl_vhdl.do -l msim_transcript -i work.audio_pll
+# vsim -do hello_world_run_msim_rtl_vhdl.do -l msim_transcript -i work.audio_pll 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.audio_pll(syn)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.mf_pllpack(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altpll(behavior)
+# Loading altera_mf.mf_stratixii_pll(vital_pll)
+# Loading altera_mf.arm_m_cntr(behave)
+# Loading altera_mf.arm_n_cntr(behave)
+# Loading altera_mf.arm_scale_cntr(behave)
+# ** Warning: Design size of 2 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+# do hello_world_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/mike/practice_quartus/hello_world/hello_world.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity hello_world
+# -- Compiling architecture Behavioral of hello_world
+# 
+add wave -position insertpoint  \
+sim:/audio_pll/areset \
+sim:/audio_pll/inclk0 \
+sim:/audio_pll/c0
+run
+# ** Note: Cyclone II PLL is enabled
+#    Time: 0 ps  Iteration: 2  Instance: /audio_pll/altpll_component/CYCLONEII_ALTPLL/M3
+run
+add wave -position insertpoint  \
+sim:/audio_pll/locked
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

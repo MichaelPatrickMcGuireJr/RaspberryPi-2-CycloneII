@@ -1,0 +1,34 @@
+|PWM
+clk => pwm_n_out[0]~reg0.CLK
+clk => pwm_out[0]~reg0.CLK
+clk => half_duty[0][0].CLK
+clk => half_duty[0][1].CLK
+clk => half_duty[0][2].CLK
+clk => half_duty[0][3].CLK
+clk => half_duty[0][4].CLK
+clk => half_duty[0][5].CLK
+clk => half_duty[0][6].CLK
+clk => half_duty[0][7].CLK
+clk => count[0][0].CLK
+clk => count[0][1].CLK
+clk => count[0][2].CLK
+clk => count[0][3].CLK
+clk => count[0][4].CLK
+clk => count[0][5].CLK
+clk => count[0][6].CLK
+clk => count[0][7].CLK
+clk => count[0][8].CLK
+clk => half_duty_new[0].CLK
+clk => half_duty_new[1].CLK
+clk => half_duty_new[2].CLK
+clk => half_duty_new[3].CLK
+clk => half_duty_new[4].CLK
+clk => half_duty_new[5].CLK
+clk => half_duty_new[6].CLK
+clk => half_duty_new[7].CLK
+reset_n => ~NO_FANOUT~
+ena => ~NO_FANOUT~
+pwm_out[0] <= pwm_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pwm_n_out[0] <= pwm_n_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
